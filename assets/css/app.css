@@ -17,6 +17,11 @@
     font-style: normal;
 }
 
+.em-gradient {
+    background-image: linear-gradient(to bottom, #631A61, #551653, #340E33, #010101);
+    height: 225px;
+}
+
 .dropdown-menu-arrow::before{
     content: "";
     position: absolute;
@@ -28,11 +33,36 @@
 }
 
 .menu-item {
-    @apply block px-4 py-2 text-sm text-white font-brand font-regular
+    @apply block px-4 py-2 text-sm text-white font-brand font-regular;
 }
 
 .menu-item:hover {
-    @apply hover:text-emDark-light
+    @apply hover:text-emDark-light;
+}
+
+form input[type="text"] {
+    @apply bg-emDark-dark font-brand font-regular text-white text-xs border border-white;
+}
+
+form input[type="text"]:focus {
+    @apply focus:outline-none focus:border-emLavender focus:ring-0;
+}
+
+.text-area {
+    @apply bg-emDark-dark font-brand font-regular text-white text-xs border border-white h-[300px] resize-none;
+    border-top: none;
+}
+
+.text-area:focus {
+    @apply focus:outline-none focus:border-white focus:ring-0
+}
+
+.create-button {
+    @apply bg-emPurple border border-white font-brand font-regular text-black text-base
+}
+
+.create-button:hover {
+    @apply hover:bg-emPurple-dark text-emDark-light border-emDark
 }
 
 .round-image-padding {
