@@ -11,7 +11,7 @@ defmodule ElixirGist.Accounts.User do
 
     timestamps()
   end
-
+  
   @doc """
   A user changeset for registration.
 
